@@ -2,6 +2,7 @@
 
 namespace JanGregor\Prophecy\Reflection;
 
+use PHPStan\Reflection\ClassMemberReflection;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Reflection\MethodReflection;
 use PHPStan\Reflection\ParameterReflection;
@@ -70,8 +71,13 @@ class ObjectProphecyMethodReflection implements MethodReflection
         return new ObjectType(MethodProphecy::class);
     }
 
-    public function getPrototype(): MethodReflection
+    public function getPrototype(): ClassMemberReflection
     {
         return $this;
+    }
+
+    public function getVariants(): array
+    {
+        // TODO: Implement getVariants() method.
     }
 }

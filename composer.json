@@ -9,7 +9,8 @@
     "require": {
         "phpspec/prophecy": "^1.7",
         "phpunit/phpunit": "^6.0||^7.0",
-        "phpstan/phpstan": "^0.9"
+        "phpstan/phpstan": "^0.10@dev",
+        "phpstan/phpdoc-parser": "0.3.x-dev"
     },
     "autoload": {
         "psr-4": {
